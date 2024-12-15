@@ -1,0 +1,7 @@
+<p> Liste des produits </p>
+<p *ngFor="let item of produits | async">
+    {{ item.nom }} - {{ item.type }} - {{ item.prix }}€ 
+    <button class="card-btn" (click)="addToCart(item)">
+        Ajouter au Caddie
+    </button>
+</p> 
